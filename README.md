@@ -33,7 +33,7 @@ You can even visualize the detected attacks.</p>
   <li>Nano custom.rules for new rule file</li>
   <li>Add your rules
 
-  <a href="https://youtu.be/HWuUW4XGxHo?si=T_z4D_2Mleqgra9S"></a>
+ Credit: https://youtu.be/HWuUW4XGxHo?si=T_z4D_2Mleqgra9S
 ```
     Example - credit - <a href="https://youtu.be/HWuUW4XGxHo?si=T_z4D_2Mleqgra9S"></a>
 
