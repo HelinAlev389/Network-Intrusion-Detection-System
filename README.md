@@ -25,3 +25,44 @@ You can even visualize the detected attacks.</p>
 <li>sudo tcpdump -i < your_interface ></li>
  
 </ol>
+
+<H3>Writing Rules</H1>
+
+<ol>
+  <li>Navigate to /etc/snort/rules</li>
+  <li>Nano custom.rules for new rule file</li>
+  <li>Add your rules
+
+  <a href="https://youtu.be/HWuUW4XGxHo?si=T_z4D_2Mleqgra9S"></a>
+```
+    Example - credit - <a href="https://youtu.be/HWuUW4XGxHo?si=T_z4D_2Mleqgra9S"></a>
+
+#RULES STRUCTURE
+
+# <RULE actions> <protocol> <src ip add> <src port> <direction operator> <destination ip add> <destination port>
+
+
+
+# ALERT ON ANY FTP CONNECTION ATTEMPT
+
+alert tcp any any -> $HOME_NET 21 (msg: "FTP connection attempt"; sid:1000001; rev:1;)
+
+
+
+# ALERT ON SPECIFIC IP SSH CONNECTION ATTEMPT
+
+alert tcp any any -> 192.168.1.4 22 (msg: "SSH connection attempted"; sid:1000002; rev:1;)
+
+
+
+# ALERT ON SPECIFIC WEBSITE VISITED
+
+alert tcp any any -> $EXTERNAL_NET $HTTP_PORTS (msg: "Test eBay.com"; content: "Ebay.com"; nocase; sid:1000003; rev:1;)
+```
+
+</p>
+</li>
+
+<li>Save and run command short -T -c /etc/snort/snort.lua</li>
+<li>Check Results</li>
+</ol>
