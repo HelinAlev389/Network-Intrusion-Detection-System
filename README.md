@@ -1,7 +1,7 @@
 <h1>Network Intrusion Detection
 System with Snort</h1>
 
-<p>Develop a network-based intrusion detection system
+<p><b>Task: </b>Develop a network-based intrusion detection system
 using tools like Snort. Set up rules and alerts
 to identify and respond to suspicious network activity.
 You can even visualize the detected attacks.</p>
